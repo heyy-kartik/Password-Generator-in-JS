@@ -1,4 +1,4 @@
- 
+
 const PassWordbox = document.getElementById("Password")
 const length = 12;
 
@@ -21,8 +21,7 @@ const CreatePassword = (length)=>{
    password += numbers[Math.floor(Math.random()*numbers.length)]; 
    password += specialChars[Math.floor(Math.random()*specialChars.length)];
    
-   while(password.length < length
-   ){
+   while(password.length <length){
     password += allChars[Math.floor(Math.random()*allChars.length)];
    }
 PassWordbox.value = password;
@@ -45,5 +44,5 @@ function copyToClipboard() {
         });
 }
 
-CreatePassword(12);
+CreatePassword(length);
 copyToClipboard();
